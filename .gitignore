@@ -28,6 +28,7 @@ hs_err_pid*
 .idea/
 *.ipr
 *.iws
+*.iml
 out/
 .idea_modules/
 
@@ -52,3 +53,5 @@ local.properties
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+
+target/
