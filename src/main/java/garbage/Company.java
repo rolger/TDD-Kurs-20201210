@@ -23,4 +23,23 @@ public class Company {
     public List<String> getGarbages() {
         return new ArrayList<>(garbages);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        Company company = (Company) o;
+
+        if (!name.equals(company.name))
+            return false;
+        return garbages.equals(company.garbages);
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
 }
